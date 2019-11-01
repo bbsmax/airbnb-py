@@ -40,12 +40,14 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    'user.apps.UserConfig',
     'core.apps.CoreConfig',
+    'user.apps.UserConfig',
     'room.apps.RoomConfig',
 ]
 
-THIRD_PART_APPS = []
+THIRD_PART_APPS = [
+    'django_countries',
+]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PART_APPS
 
@@ -113,9 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 

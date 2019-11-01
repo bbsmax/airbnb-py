@@ -12,7 +12,8 @@ class AbstractItem(core_models.AbstractTimeStamp):
 
 
 class RoomType(AbstractItem):
-    pass
+    def __str__(self):
+        return self.name
 
 
 # Create your models here.
